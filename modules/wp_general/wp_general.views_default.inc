@@ -165,7 +165,6 @@ function wp_general_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $export['match_recent'] = $view;
 
   $view = new view();
@@ -271,7 +270,6 @@ function wp_general_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $export['player_rank'] = $view;
 
   return $export;
