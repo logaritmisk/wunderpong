@@ -16,7 +16,7 @@ projects[ctools][version] = 1.2
 
 
 ; Date
-projects[ctools][version] = 2.6
+projects[date][version] = 2.6
 
 
 ; Entity Reference
