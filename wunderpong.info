@@ -8,5 +8,7 @@ dependencies[] = field_ui
 dependencies[] = admin_menu
 dependencies[] = diff
 dependencies[] = views_ui
+dependencies[] = panels
+dependencies[] = panels_everywhere
 
 dependencies[] = wp_general
