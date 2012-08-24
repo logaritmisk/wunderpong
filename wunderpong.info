@@ -12,3 +12,4 @@ dependencies[] = panels
 dependencies[] = panels_everywhere
 
 dependencies[] = wp_general
+dependencies[] = wp_score
