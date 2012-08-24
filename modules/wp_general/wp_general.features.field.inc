@@ -117,20 +117,18 @@ function wp_general_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'none',
-            'property' => 'uid',
-            'type' => 'none',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'reference_players',
           ),
-          'target_bundles' => array(),
         ),
         'handler_submit' => 'Change handler',
         'target_type' => 'user',
@@ -491,20 +489,18 @@ function wp_general_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'reference_players',
           ),
-          'target_bundles' => array(),
         ),
         'handler_submit' => 'Change handler',
         'target_type' => 'user',
@@ -583,20 +579,18 @@ function wp_general_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'reference_players',
           ),
-          'target_bundles' => array(),
         ),
         'handler_submit' => 'Change handler',
         'target_type' => 'user',
@@ -675,20 +669,18 @@ function wp_general_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'reference_players',
           ),
-          'target_bundles' => array(),
         ),
         'handler_submit' => 'Change handler',
         'target_type' => 'user',

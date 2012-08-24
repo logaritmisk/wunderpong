@@ -20,7 +20,10 @@ projects[date][version] = 2.6
 
 
 ; Entity Reference
-projects[entityreference][version] = 1.0-rc3
+projects[entityreference][type] = module
+projects[entityreference][download][type] = git
+projects[entityreference][download][url] = http://git.drupal.org/project/entityreference.git
+projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096abdef53b
 
 
 ; References dialog
