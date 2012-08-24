@@ -2,6 +2,11 @@ name = Wunderpong
 description = (In)official Wunderkraut table tennis profile.
 core = 7.x
 
+dependencies[] = dblog
+dependencies[] = field_ui
+
 dependencies[] = admin_menu
+dependencies[] = diff
+dependencies[] = views_ui
 
 dependencies[] = wp_general

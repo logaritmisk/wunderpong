@@ -53,3 +53,7 @@ projects[features][version] = 1.0
 
 ; Strongarm
 projects[strongarm][version] = 2.0
+
+
+; Diff
+projects[diff][version] = 2.0
