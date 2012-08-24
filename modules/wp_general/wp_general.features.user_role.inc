@@ -10,6 +10,12 @@
 function wp_general_user_default_roles() {
   $roles = array();
 
+  // Exported role: admin.
+  $roles['admin'] = array(
+    'name' => 'admin',
+    'weight' => '3',
+  );
+
   // Exported role: player.
   $roles['player'] = array(
     'name' => 'player',
