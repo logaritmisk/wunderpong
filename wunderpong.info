@@ -3,3 +3,5 @@ description = (In)official Wunderkraut table tennis profile.
 core = 7.x
 
 dependencies[] = admin_menu
+
+dependencies[] = wp_general
