@@ -1,0 +1,6 @@
+/libraries/*
+
+/modules/*
+!/modules/wp_*
+
+/themes/*
