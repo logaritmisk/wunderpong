@@ -51,7 +51,10 @@ projects[views][version] = 3.4
 
 
 ; Features
-projects[features][version] = 1.0
+projects[features][type] = module
+projects[features][download][type] = git
+projects[features][download][url] = http://git.drupal.org/project/features.git
+projects[features][download][revision] = d57bee4ae7680e06b75b4dc25836f69f03c068e8
 
 
 ; Strongarm
