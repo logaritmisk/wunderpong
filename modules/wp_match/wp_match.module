@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Match feature.
+ */
+
+include_once 'wp_match.features.inc';

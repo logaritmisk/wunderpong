@@ -26,10 +26,6 @@ projects[entityreference][download][url] = http://git.drupal.org/project/entityr
 projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096abdef53b
 
 
-; References dialog
-projects[references_dialog][version] = 1.0-alpha4
-
-
 ; Automatic Entity Labels
 projects[auto_entitylabel][version] = 1.0
 
@@ -63,3 +59,10 @@ projects[strongarm][version] = 2.0
 
 ; Diff
 projects[diff][version] = 2.0
+
+
+; Field collection
+projects[field_collection][type] = module
+projects[field_collection][download][type] = git
+projects[field_collection][download][url] = http://git.drupal.org/project/field_collection.git
+projects[field_collection][download][revision] = 1b68602571a43642e01f0182288355177c99cbf3

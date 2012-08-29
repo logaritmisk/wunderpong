@@ -1,8 +1,0 @@
-name = Score
-core = 7.x
-package = Wunderpong
-php = 5.2.4
-dependencies[] = features
-dependencies[] = number
-features[features_api][] = api:1
-features[field][] = user-user-field_score

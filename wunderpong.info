@@ -6,10 +6,9 @@ dependencies[] = dblog
 dependencies[] = field_ui
 
 dependencies[] = admin_menu
+
+dependencies[] = wp_user
+dependencies[] = wp_match
+
 dependencies[] = diff
 dependencies[] = views_ui
-dependencies[] = panels
-dependencies[] = panels_everywhere
-
-dependencies[] = wp_general
-dependencies[] = wp_score
