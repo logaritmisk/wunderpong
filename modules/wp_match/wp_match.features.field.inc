@@ -168,7 +168,7 @@ function wp_match_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => 5,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -261,7 +261,7 @@ function wp_match_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 3,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -347,7 +347,7 @@ function wp_match_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 4,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -381,7 +381,7 @@ function wp_match_field_default_fields() {
   $fields['node-wp_match-field_match_sets'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '3',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_match_sets',
@@ -412,7 +412,7 @@ function wp_match_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => 2,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
