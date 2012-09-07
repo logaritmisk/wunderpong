@@ -13,4 +13,4 @@ dependencies[] = wp_match
 
 dependencies[] = diff
 dependencies[] = views_ui
-dependencies[] = rules_ui
+dependencies[] = rules_admin
