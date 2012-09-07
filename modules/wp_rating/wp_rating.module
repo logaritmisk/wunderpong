@@ -64,9 +64,9 @@ function wp_rating_update_user_rating($user) {
 
   $lost = $query->execute();
 
-  $rating = ($won / ($won + $lost)) * 100;
+  $current_rating = ($won / ($won + $lost)) * 100;
 
-  $user->field_user_rating[LANGUAGE_NONE][WP_RATING_DELTA]['value'] = $rating;
+  $user->field_user_rating[LANGUAGE_NONE][WP_RATING_DELTA]['value'] = $current_rating;
 
   entity_save('user', $user);
 }
