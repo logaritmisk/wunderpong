@@ -5,3 +5,27 @@
  */
 
 include_once 'wp_user.features.inc';
+
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ */
+function wp_user_form_user_login_alter(&$form, &$form_state) {
+  $form['name']['#title'] = t("Mail");
+  $form['name']['#description'] = t("Enter your mail address.");
+
+  unset($form['name']['#maxlength']);
+
+  array_unshift($form['#validate'], 'wp_user_user_login_validate');
+}
+
+/**
+ * Custom validate for user_login that gets user name from mail address.
+ */
+function wp_user_user_login_validate($form, &$form_state) {
+  $account = db_query("SELECT * FROM {users} WHERE mail = :mail AND status = 1", array(':mail' => $form_state['values']['name']))->fetchObject();
+
+  if ($account) {
+    $form_state['values']['name'] = $account->name;
+  }
+}
