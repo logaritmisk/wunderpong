@@ -13,4 +13,5 @@ features[page_manager_handlers][] = site_template_panel_context
 features[page_manager_pages][] = wp_general_front
 features[variable][] = panels_everywhere_site_template_enabled
 features[variable][] = site_frontpage
+features[variable][] = theme_default
 features[variable][] = user_register
