@@ -33,16 +33,16 @@ function wp_rating_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
+            'prefix_suffix' => 1,
             'scale' => 0,
             'thousand_separator' => ' ',
           ),
           'type' => 'number_integer',
-          'weight' => 0,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'user',
