@@ -46,6 +46,10 @@ projects[panels_everywhere][version] = 1.0-rc1
 projects[views][version] = 3.4
 
 
+; Rules
+projects[rules][version] = 2.2
+
+
 ; Features
 projects[features][type] = module
 projects[features][download][type] = git
@@ -59,10 +63,3 @@ projects[strongarm][version] = 2.0
 
 ; Diff
 projects[diff][version] = 2.0
-
-
-; Field collection
-projects[field_collection][type] = module
-projects[field_collection][download][type] = git
-projects[field_collection][download][url] = http://git.drupal.org/project/field_collection.git
-projects[field_collection][download][revision] = 1b68602571a43642e01f0182288355177c99cbf3
