@@ -32,6 +32,12 @@ function wp_user_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: User: Name */
+  $handler->display->display_options['fields']['field_user_name']['id'] = 'field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['table'] = 'field_data_field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['field'] = 'field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_name']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -41,6 +47,10 @@ function wp_user_views_default_views() {
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
+  /* Sort criterion: User: Name (field_user_name) */
+  $handler->display->display_options['sorts']['field_user_name_value']['id'] = 'field_user_name_value';
+  $handler->display->display_options['sorts']['field_user_name_value']['table'] = 'field_data_field_user_name';
+  $handler->display->display_options['sorts']['field_user_name_value']['field'] = 'field_user_name_value';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';

@@ -73,5 +73,20 @@ function wp_match_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_wp_match_redirect'] = entity_import('rules_config', '{ "rules_wp_match_redirect" : {
+      "LABEL" : "wp_match_redirect",
+      "PLUGIN" : "reaction rule",
+      "REQUIRES" : [ "rules" ],
+      "ON" : [ "node_insert" ],
+      "IF" : [
+        { "node_is_of_type" : {
+            "node" : [ "node" ],
+            "type" : { "value" : { "wp_match" : "wp_match" } }
+          }
+        }
+      ],
+      "DO" : [ { "redirect" : { "url" : "[site:url]" } } ]
+    }
+  }');
   return $items;
 }
