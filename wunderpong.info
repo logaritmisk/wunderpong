@@ -7,9 +7,10 @@ dependencies[] = field_ui
 
 dependencies[] = admin_menu
 
-dependencies[] = wp_layout
 dependencies[] = wp_user
 dependencies[] = wp_match
+dependencies[] = wp_layout
+dependencies[] = wp_statistics
 
 dependencies[] = diff
 dependencies[] = views_ui

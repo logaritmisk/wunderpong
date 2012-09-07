@@ -1,0 +1,10 @@
+name = Statistics
+core = 7.x
+package = Wunderpong
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = panels_mini
+dependencies[] = wp_match
+features[ctools][] = panels_mini:panels_default:1
+features[features_api][] = api:1
+features[panels_mini][] = wp_statistics_overview
