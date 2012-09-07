@@ -27,6 +27,7 @@ function wp_statistics_default_panels_mini() {
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'main' => NULL,
     ),
   );
   $display->cache = array();
@@ -35,7 +36,7 @@ function wp_statistics_default_panels_mini() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'matches_played';
     $pane->subtype = 'matches_played';
     $pane->shown = TRUE;
@@ -50,10 +51,10 @@ function wp_statistics_default_panels_mini() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['middle'][0] = 'new-1';
+    $display->panels['main'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'pongs_won';
     $pane->subtype = 'pongs_won';
     $pane->shown = TRUE;
@@ -68,10 +69,10 @@ function wp_statistics_default_panels_mini() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['middle'][1] = 'new-2';
+    $display->panels['main'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'player_count';
     $pane->subtype = 'player_count';
     $pane->shown = TRUE;
@@ -86,7 +87,7 @@ function wp_statistics_default_panels_mini() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['middle'][2] = 'new-3';
+    $display->panels['main'][2] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $mini->display = $display;
