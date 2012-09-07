@@ -5,3 +5,13 @@
  */
 
 include_once 'wp_general.features.inc';
+
+
+/**
+ * Implements hook_ctools_plugin_directory()
+ */
+function wp_general_ctools_plugin_directory($module, $type) {
+  if (in_array($type, array('content_types'))) {
+    return "plugins/$type";
+  }
+}
