@@ -100,7 +100,7 @@ function wp_general_default_page_manager_pages() {
   $handler->api_version = 1;
   $handler->name = 'page_wp_layout_front_panel_context';
   $handler->task = 'page';
-  $handler->subtask = 'wp_layout_front';
+  $handler->subtask = 'wp_general_front';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
