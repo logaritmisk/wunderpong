@@ -68,6 +68,7 @@ function wp_rating_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = 'Player';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
   /* Sort criterion: User: Rating (field_user_rating) */
   $handler->display->display_options['sorts']['field_user_rating_value']['id'] = 'field_user_rating_value';
   $handler->display->display_options['sorts']['field_user_rating_value']['table'] = 'field_data_field_user_rating';

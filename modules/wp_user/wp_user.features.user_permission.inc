@@ -19,6 +19,15 @@ function wp_user_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access user profiles.
+  $permissions['access user profiles'] = array(
+    'name' => 'access user profiles',
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: create wp_match content.
   $permissions['create wp_match content'] = array(
     'name' => 'create wp_match content',
