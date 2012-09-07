@@ -9,7 +9,6 @@ $plugin = array(
   'icon' => 'site_template.png',
   'category' => 'Builders',
   'regions' => array(
-    'topbar' => t('Topbar'),
     'header' => t('Header'),
     'navigation' => t('Navigation'),
     'content' => t('Content'),

@@ -1,18 +1,29 @@
 body, select, input, textarea {
-  color: #333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  color: #3c454a;
+  font-family: "MuseoSlab500", sans-serif;
+  font-size: 14px;
   line-height: 19px;
 }
 
 body {
-  background: #f3f3f3;
+  background: #fff;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'MuseoSlab500';
+  src: url('../fonts/museo-slab-500.eot');
+  src: url('../fonts/museo-slab-500.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museo-slab-500.woff') format('woff'),
+       url('../fonts/museo-slab-500.ttf') format('truetype'),
+       url('../fonts/museo-slab-500.svg#museo-slab-500') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
   -moz-transition: all 0.2s ease 0s;
-  color: #0052a5;
+  color: #58b8d1;
   text-decoration: none;
 }
 
@@ -20,14 +31,8 @@ a:hover {
   text-decoration: underline;
 }
 
-a:hover,
-aside a.active {
-  color: #333;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: helvetica, arial, sans-serif;
-  font-weight: bold;
+  letter-spacing: -1px;
   margin: 0;
 }
 
@@ -61,4 +66,28 @@ h5 {
 
 h6 {
   font-size: 13px;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 990px;
+}
+
+#header {
+  padding: 20px;
+}
+
+#header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#content {
+  background: #f3f3f3;
+  padding: 20px 0;
+}
+
+#footer {
+  font-size: 10px;
+  padding: 20px 0;
 }
