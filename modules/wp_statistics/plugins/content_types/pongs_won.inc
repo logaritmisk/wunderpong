@@ -8,15 +8,15 @@
  *
  */
 $plugin = array(
-  'title' => t('Pongs played'),
-  'description' => t('The number of pongs played.'),
+  'title' => t('Pongs won'),
+  'description' => t('The number of pongs won.'),
   'category' => t('Statistics'),
 );
 
 /**
  * Render the custom content type.
  */
-function wp_statistics_pongs_played_content_type_render($subtype, $conf, $panel_args, $context) {
+function wp_statistics_pongs_won_content_type_render($subtype, $conf, $panel_args, $context) {
   $query = db_select('node', 'n')
     ->condition('type', 'wp_match', '=')
     ->fields('n', array('nid'))
@@ -35,8 +35,8 @@ function wp_statistics_pongs_played_content_type_render($subtype, $conf, $panel_
   }
 
   $block = new stdClass();
-  $block->module = 'pongs_played';
-  $block->title = t('Pongs played');
+  $block->module = 'pongs_won';
+  $block->title = t('Pongs won');
   $block->content = $pongs;
 
   return $block;
@@ -45,6 +45,6 @@ function wp_statistics_pongs_played_content_type_render($subtype, $conf, $panel_
 /**
  * Returns the administrative title for a type.
  */
-function wp_statistics_pongs_played_content_type_admin_title($subtype, $conf, $context) {
-  return t('Pongs played');
+function wp_statistics_pongs_won_content_type_admin_title($subtype, $conf, $context) {
+  return t('Pongs won');
 }
