@@ -3,6 +3,8 @@
  * @file
  */
 
+define('WP_RATING_DELTA', 0);
+
 
 /**
  * Implements hook_entity_insert()
@@ -33,8 +35,6 @@ function wp_rating_entity_update($entity, $type) {
     foreach (entity_load('user', $players) as $player) {
       wp_rating_update_user_rating($player);
     }
-
-    die;
   }
 }
 
@@ -62,5 +62,7 @@ function wp_rating_update_user_rating($user) {
 
   $rating = ($won / ($won + $lost)) * 100;
 
-  var_dump($user->uid, $rating);
+  $user->field_user_rating[LANGUAGE_NONE][WP_RATING_DELTA]['value'] = $rating;
+
+  entity_save('user', $user);
 }
