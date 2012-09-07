@@ -184,7 +184,7 @@ function wp_general_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Welcome';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -261,6 +261,7 @@ function wp_general_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'main' => NULL,
     ),
   );
   $display->cache = array();
@@ -269,7 +270,7 @@ function wp_general_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'views_panes';
     $pane->subtype = 'wp_match_recent-panel_pane_1';
     $pane->shown = TRUE;
@@ -284,10 +285,10 @@ function wp_general_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['middle'][0] = 'new-1';
+    $display->panels['main'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'views_panes';
     $pane->subtype = 'wp_rating_rating-panel_pane_1';
     $pane->shown = TRUE;
@@ -302,10 +303,10 @@ function wp_general_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['middle'][1] = 'new-2';
+    $display->panels['main'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'middle';
+    $pane->panel = 'main';
     $pane->type = 'panels_mini';
     $pane->subtype = 'wp_statistics_overview';
     $pane->shown = TRUE;
@@ -323,9 +324,9 @@ function wp_general_default_page_manager_pages() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['middle'][2] = 'new-3';
+    $display->panels['main'][2] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['wp_general_front'] = $page;
