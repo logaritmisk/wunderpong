@@ -1,0 +1,47 @@
+name = Wunderpong
+description = Wunderpong
+core = 7.x
+
+; Stylesheets
+stylesheets[all][] = css/reset.css
+stylesheets[screen][] = css/style.css
+
+; Core stylesheets for exclusion
+stylesheets[all][] = aggregator.css
+stylesheets[all][] = comment.css
+stylesheets[all][] = filter.css
+stylesheets[all][] = node.css
+stylesheets[all][] = search.css
+stylesheets[all][] = system.admin.css
+stylesheets[all][] = system.base.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.theme.css
+stylesheets[all][] = user.css
+
+; Contrib stylesheets for exclusion
+stylesheets[all][] = admin_menu/admin_menu.uid1.css
+stylesheets[all][] = contextual/contextual.css
+stylesheets[all][] = ctools/css/ctools.css
+stylesheets[all][] = date/date_api/date.css
+stylesheets[all][] = field/theme/field.css
+stylesheets[all][] = panels/css/panels.css
+stylesheets[all][] = references_dialog/css/references-dialog-admin.css
+stylesheets[all][] = misc/ui/jquery.ui.theme.css
+stylesheets[all][] = misc/ui/jquery.ui.tabs.css
+stylesheets[all][] = plupload/plupload.css
+stylesheets[all][] = views/css/views.css
+
+; scripts[] = js/jquery.cycle.all.js
+
+; Panels settings
+api[panels][styles][version] = 3
+plugins[panels][layouts] = layouts
+plugins[panels][styles] = styles
+
+; Features
+features[] = logo
+features[] = name
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu

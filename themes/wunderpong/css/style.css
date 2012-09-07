@@ -1,0 +1,64 @@
+body, select, input, textarea {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+body {
+  background: #f3f3f3;
+  margin: 0 auto;
+}
+
+a {
+  -moz-transition: all 0.2s ease 0s;
+  color: #0052a5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:hover,
+aside a.active {
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h6 {
+  font-size: 13px;
+}
