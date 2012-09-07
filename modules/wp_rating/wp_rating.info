@@ -1,0 +1,8 @@
+name = Rating
+core = 7.x
+package = Wunderpong
+dependencies[] = features
+dependencies[] = number
+dependencies[] = wp_match
+features[features_api][] = api:1
+features[field][] = user-user-field_user_rating
