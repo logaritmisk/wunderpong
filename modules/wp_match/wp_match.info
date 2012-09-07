@@ -9,6 +9,7 @@ dependencies[] = features
 dependencies[] = number
 dependencies[] = rules
 dependencies[] = strongarm
+dependencies[] = token
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = wp_user

@@ -21,7 +21,7 @@ function wp_match_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_wp_match';
-  $strongarm->value = 'Match';
+  $strongarm->value = '[node:field-match-players:0:name] - [node:field-match-players:1:name] ([node:field-match-date:short])';
   $export['auto_entitylabel_pattern_node_wp_match'] = $strongarm;
 
   $strongarm = new stdClass();
