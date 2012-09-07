@@ -61,10 +61,14 @@ function wp_rating_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '7',
+        'weight' => '2',
       ),
     ),
   );
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Rating');
 
   return $fields;
 }

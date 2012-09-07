@@ -62,13 +62,10 @@ function wp_rating_views_default_views() {
   $handler->display->display_options['fields']['field_user_rating']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_user_rating']['delta_offset'] = '0';
   /* Field: User: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['label'] = 'Player';
-  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
+  $handler->display->display_options['fields']['field_user_name']['id'] = 'field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['table'] = 'field_data_field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['field'] = 'field_user_name';
+  $handler->display->display_options['fields']['field_user_name']['label'] = 'Player';
   /* Sort criterion: User: Rating (field_user_rating) */
   $handler->display->display_options['sorts']['field_user_rating_value']['id'] = 'field_user_rating_value';
   $handler->display->display_options['sorts']['field_user_rating_value']['table'] = 'field_data_field_user_rating';
