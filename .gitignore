@@ -5,3 +5,7 @@
 
 /themes/*
 !/themes/wunderpong/
+
+.DS_Store
+._*
+.#*
