@@ -28,6 +28,24 @@ function wp_user_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: administer permissions.
+  $permissions['administer permissions'] = array(
+    'name' => 'administer permissions',
+    'roles' => array(
+      0 => 'admin',
+    ),
+    'module' => 'user',
+  );
+
+  // Exported permission: administer users.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
+    'roles' => array(
+      0 => 'admin',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: create wp_match content.
   $permissions['create wp_match content'] = array(
     'name' => 'create wp_match content',
