@@ -11,7 +11,6 @@ dependencies[] = wp_general
 dependencies[] = wp_user
 dependencies[] = wp_match
 dependencies[] = wp_rating
-dependencies[] = wp_layout
 dependencies[] = wp_statistics
 
 dependencies[] = diff

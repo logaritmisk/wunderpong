@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Layout feature.
- */
-
-include_once 'wp_layout.features.inc';
