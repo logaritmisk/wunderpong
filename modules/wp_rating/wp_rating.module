@@ -1,7 +1,11 @@
 <?php
 /**
  * @file
+ * Code for the Rating feature.
  */
+
+include_once 'wp_rating.features.inc';
+
 
 define('WP_RATING_DELTA', 0);
 
