@@ -4,3 +4,4 @@
 !/modules/wp_*
 
 /themes/*
+!/themes/wunderpong/
