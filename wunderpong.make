@@ -25,6 +25,9 @@ projects[entityreference][download][type] = git
 projects[entityreference][download][url] = http://git.drupal.org/project/entityreference.git
 projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096abdef53b
 
+; Add a delta filter in the Views relationships - http://drupal.org/node/1468862#comment-6449450
+projects[entityreference][patch][] = http://drupal.org/files/relationship_delta-1468862-6.patch
+
 
 ; Automatic Entity Labels
 projects[auto_entitylabel][version] = 1.1
