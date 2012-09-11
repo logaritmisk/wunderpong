@@ -27,7 +27,7 @@ projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096
 
 
 ; Automatic Entity Labels
-projects[auto_entitylabel][version] = 1.0
+projects[auto_entitylabel][version] = 1.1
 
 
 ; Entity API
@@ -43,7 +43,7 @@ projects[panels_everywhere][version] = 1.0-rc1
 
 
 ; Views
-projects[views][version] = 3.4
+projects[views][version] = 3.5
 
 
 ; Rules
