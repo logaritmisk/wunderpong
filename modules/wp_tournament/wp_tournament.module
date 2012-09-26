@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Tournament feature.
+ */
+
+include_once 'wp_tournament.features.inc';
