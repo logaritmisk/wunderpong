@@ -88,7 +88,7 @@ function wp_match_field_default_fields() {
           'year_range' => '-0:+0',
         ),
         'type' => 'date_select',
-        'weight' => '5',
+        'weight' => '3',
       ),
     ),
   );
@@ -322,7 +322,7 @@ function wp_match_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );

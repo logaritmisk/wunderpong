@@ -23,8 +23,8 @@ function wp_match_field_group_info() {
     'label' => 'Loser',
     'weight' => '2',
     'children' => array(
-      0 => 'field_match_loser_user',
-      1 => 'field_match_loser_result',
+      0 => 'field_match_loser_result',
+      1 => 'field_match_loser_user',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -52,8 +52,8 @@ function wp_match_field_group_info() {
     'label' => 'Winner',
     'weight' => '1',
     'children' => array(
-      0 => 'field_match_winner_user',
-      1 => 'field_match_winner_result',
+      0 => 'field_match_winner_result',
+      1 => 'field_match_winner_user',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
