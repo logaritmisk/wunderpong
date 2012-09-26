@@ -54,40 +54,38 @@ function wp_match_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_match_players_target_id']['id'] = 'field_match_players_target_id';
-  $handler->display->display_options['relationships']['field_match_players_target_id']['table'] = 'field_data_field_match_players';
-  $handler->display->display_options['relationships']['field_match_players_target_id']['field'] = 'field_match_players_target_id';
-  $handler->display->display_options['relationships']['field_match_players_target_id']['label'] = 'Player 1';
-  $handler->display->display_options['relationships']['field_match_players_target_id']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_match_players_target_id']['delta'] = '0';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['id'] = 'field_match_players_target_id_1';
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['table'] = 'field_data_field_match_players';
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['field'] = 'field_match_players_target_id';
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['label'] = 'Player 2';
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_match_players_target_id_1']['delta'] = '1';
-  /* Field: User: Name */
-  $handler->display->display_options['fields']['field_user_name']['id'] = 'field_user_name';
-  $handler->display->display_options['fields']['field_user_name']['table'] = 'field_data_field_user_name';
-  $handler->display->display_options['fields']['field_user_name']['field'] = 'field_user_name';
-  $handler->display->display_options['fields']['field_user_name']['relationship'] = 'field_match_players_target_id';
-  $handler->display->display_options['fields']['field_user_name']['label'] = '';
-  $handler->display->display_options['fields']['field_user_name']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_user_name']['element_label_colon'] = FALSE;
-  /* Field: User: Name */
-  $handler->display->display_options['fields']['field_user_name_1']['id'] = 'field_user_name_1';
-  $handler->display->display_options['fields']['field_user_name_1']['table'] = 'field_data_field_user_name';
-  $handler->display->display_options['fields']['field_user_name_1']['field'] = 'field_user_name';
-  $handler->display->display_options['fields']['field_user_name_1']['relationship'] = 'field_match_players_target_id_1';
-  $handler->display->display_options['fields']['field_user_name_1']['label'] = 'Players';
-  $handler->display->display_options['fields']['field_user_name_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_user_name_1']['alter']['text'] = '[field_user_name] - [field_user_name_1]';
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_match_results']['id'] = 'field_match_results';
-  $handler->display->display_options['fields']['field_match_results']['table'] = 'field_data_field_match_results';
-  $handler->display->display_options['fields']['field_match_results']['field'] = 'field_match_results';
+  /* Field: Content: Player */
+  $handler->display->display_options['fields']['field_match_winner_user']['id'] = 'field_match_winner_user';
+  $handler->display->display_options['fields']['field_match_winner_user']['table'] = 'field_data_field_match_winner_user';
+  $handler->display->display_options['fields']['field_match_winner_user']['field'] = 'field_match_winner_user';
+  $handler->display->display_options['fields']['field_match_winner_user']['label'] = 'Winner';
+  $handler->display->display_options['fields']['field_match_winner_user']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Player */
+  $handler->display->display_options['fields']['field_match_loser_user']['id'] = 'field_match_loser_user';
+  $handler->display->display_options['fields']['field_match_loser_user']['table'] = 'field_data_field_match_loser_user';
+  $handler->display->display_options['fields']['field_match_loser_user']['field'] = 'field_match_loser_user';
+  $handler->display->display_options['fields']['field_match_loser_user']['label'] = 'Loser';
+  $handler->display->display_options['fields']['field_match_loser_user']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Content: Result */
+  $handler->display->display_options['fields']['field_match_winner_result']['id'] = 'field_match_winner_result';
+  $handler->display->display_options['fields']['field_match_winner_result']['table'] = 'field_data_field_match_winner_result';
+  $handler->display->display_options['fields']['field_match_winner_result']['field'] = 'field_match_winner_result';
+  $handler->display->display_options['fields']['field_match_winner_result']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Result */
+  $handler->display->display_options['fields']['field_match_loser_result']['id'] = 'field_match_loser_result';
+  $handler->display->display_options['fields']['field_match_loser_result']['table'] = 'field_data_field_match_loser_result';
+  $handler->display->display_options['fields']['field_match_loser_result']['field'] = 'field_match_loser_result';
+  $handler->display->display_options['fields']['field_match_loser_result']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_match_date']['id'] = 'field_match_date';
   $handler->display->display_options['fields']['field_match_date']['table'] = 'field_data_field_match_date';

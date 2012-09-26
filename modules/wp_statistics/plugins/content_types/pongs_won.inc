@@ -29,8 +29,8 @@ function wp_statistics_pongs_won_content_type_render($subtype, $conf, $panel_arg
     $matches = entity_load('node', $set);
 
     foreach ($matches as $match) {
-      $pongs += (int) $match->field_match_results[LANGUAGE_NONE][0]['value'];
-      $pongs += (int) $match->field_match_results[LANGUAGE_NONE][1]['value'];
+      $pongs += (int) $match->field_match_winner_result[LANGUAGE_NONE][0]['value'];
+      $pongs += (int) $match->field_match_loser_result[LANGUAGE_NONE][0]['value'];
     }
   }
 
