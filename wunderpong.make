@@ -60,6 +60,13 @@ projects[features][download][url] = http://git.drupal.org/project/features.git
 projects[features][download][revision] = d57bee4ae7680e06b75b4dc25836f69f03c068e8
 
 
+; Field group
+projects[field_group][type] = module
+projects[field_group][download][type] = git
+projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
+projects[field_group][download][revision] = 9cdde2b96d415538257f11998f28d7e4d50a29ab
+
+
 ; Token
 projects[token][version] = 1.2
 

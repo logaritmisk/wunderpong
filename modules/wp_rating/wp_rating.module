@@ -50,7 +50,7 @@ function wp_rating_update_user_rating($user) {
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'wp_match')
     ->propertyCondition('status', 1)
-    ->fieldCondition('field_match_winner', 'target_id', $user->uid, '=')
+    ->fieldCondition('field_match_winner_user', 'target_id', $user->uid, '=')
     ->count();
 
   $won = $query->execute();
@@ -59,7 +59,7 @@ function wp_rating_update_user_rating($user) {
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'wp_match')
     ->propertyCondition('status', 1)
-    ->fieldCondition('field_match_loser', 'target_id', $user->uid, '=')
+    ->fieldCondition('field_match_loser_user', 'target_id', $user->uid, '=')
     ->count();
 
   $lost = $query->execute();

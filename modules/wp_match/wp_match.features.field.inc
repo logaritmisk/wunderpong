@@ -88,25 +88,87 @@ function wp_match_field_default_fields() {
           'year_range' => '-0:+0',
         ),
         'type' => 'date_select',
-        'weight' => '3',
+        'weight' => '5',
       ),
     ),
   );
 
-  // Exported field: 'node-wp_match-field_match_loser'.
-  $fields['node-wp_match-field_match_loser'] = array(
+  // Exported field: 'node-wp_match-field_match_loser_result'.
+  $fields['node-wp_match-field_match_loser_result'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_match_loser',
-      'foreign keys' => array(
-        'users' => array(
-          'columns' => array(
-            'target_id' => 'uid',
+      'field_name' => 'field_match_loser_result',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'wp_match',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 0,
+            'thousand_separator' => ' ',
           ),
-          'table' => 'users',
+          'type' => 'number_integer',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_match_loser_result',
+      'label' => 'Result',
+      'required' => 1,
+      'settings' => array(
+        'max' => '',
+        'min' => '0',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-wp_match-field_match_loser_user'.
+  $fields['node-wp_match-field_match_loser_user'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_match_loser_user',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
         ),
       ),
       'indexes' => array(
@@ -149,7 +211,7 @@ function wp_match_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '4',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -159,9 +221,9 @@ function wp_match_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_match_loser',
-      'label' => 'Loser',
-      'required' => 0,
+      'field_name' => 'field_match_loser_user',
+      'label' => 'Player',
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -174,7 +236,7 @@ function wp_match_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '5',
+        'weight' => '3',
       ),
     ),
   );
@@ -260,19 +322,19 @@ function wp_match_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '1',
+        'weight' => '6',
       ),
     ),
   );
 
-  // Exported field: 'node-wp_match-field_match_results'.
-  $fields['node-wp_match-field_match_results'] = array(
+  // Exported field: 'node-wp_match-field_match_winner_result'.
+  $fields['node-wp_match-field_match_winner_result'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '2',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_match_results',
+      'field_name' => 'field_match_winner_result',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -297,7 +359,7 @@ function wp_match_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_integer',
-          'weight' => '1',
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -307,9 +369,9 @@ function wp_match_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_match_results',
-      'label' => 'Results',
-      'required' => 0,
+      'field_name' => 'field_match_winner_result',
+      'label' => 'Result',
+      'required' => 1,
       'settings' => array(
         'max' => '',
         'min' => '0',
@@ -322,25 +384,25 @@ function wp_match_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '2',
+        'weight' => '10',
       ),
     ),
   );
 
-  // Exported field: 'node-wp_match-field_match_winner'.
-  $fields['node-wp_match-field_match_winner'] = array(
+  // Exported field: 'node-wp_match-field_match_winner_user'.
+  $fields['node-wp_match-field_match_winner_user'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_match_winner',
+      'field_name' => 'field_match_winner_user',
       'foreign keys' => array(
-        'users' => array(
+        'node' => array(
           'columns' => array(
-            'target_id' => 'uid',
+            'target_id' => 'nid',
           ),
-          'table' => 'users',
+          'table' => 'node',
         ),
       ),
       'indexes' => array(
@@ -351,20 +413,18 @@ function wp_match_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'none',
-            'property' => 'uid',
-            'type' => 'none',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'wp_user_players',
           ),
-          'target_bundles' => array(),
         ),
         'handler_submit' => 'Change handler',
         'target_type' => 'user',
@@ -385,7 +445,7 @@ function wp_match_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '3',
+          'weight' => 3,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -395,9 +455,9 @@ function wp_match_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_match_winner',
-      'label' => 'Winner',
-      'required' => 0,
+      'field_name' => 'field_match_winner_user',
+      'label' => 'Player',
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -410,7 +470,7 @@ function wp_match_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '4',
+        'weight' => '9',
       ),
     ),
   );
@@ -418,10 +478,9 @@ function wp_match_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Date');
-  t('Loser');
+  t('Player');
   t('Players');
-  t('Results');
-  t('Winner');
+  t('Result');
 
   return $fields;
 }

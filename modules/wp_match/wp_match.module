@@ -5,30 +5,3 @@
  */
 
 include_once 'wp_match.features.inc';
-
-
-/**
- * Implements hook_node_validate()
- */
-function wp_match_node_validate($node, $form, &$form_state) {
-  if ($node->type === 'wp_match') {
-    $result_1 = $node->field_match_results[LANGUAGE_NONE][0]['value'];
-    $result_2 = $node->field_match_results[LANGUAGE_NONE][1]['value'];
-
-    if ($result_1 === $result_2) {
-      form_set_error('field_match_results', t('Come on, some one won, who was it?!.'));
-    }
-
-    if ($result_1 < 11 && $result_2 < 11) {
-      form_set_error('field_match_results', t('We play to 11, okey?.'));
-    }
-
-    if ($result_1 > 11 && ($result_1 - $result_2) !== 2) {
-      form_set_error('field_match_results', t('Have to win with two pongs.'));
-    }
-
-    if ($result_2 > 11 && ($result_2 - $result_1) !== 2) {
-      form_set_error('field_match_results', t('Have to win with two pongs.'));
-    }
-  }
-}
