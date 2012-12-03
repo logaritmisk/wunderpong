@@ -249,6 +249,9 @@ function wp_match_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_match_players',
+      'field_permissions' => array(
+        'type' => '2',
+      ),
       'foreign keys' => array(
         'users' => array(
           'columns' => array(

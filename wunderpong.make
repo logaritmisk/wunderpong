@@ -20,9 +20,7 @@ projects[date][version] = 2.6
 
 
 ; Entity Reference
-projects[entityreference][type] = module
 projects[entityreference][download][type] = git
-projects[entityreference][download][url] = http://git.drupal.org/project/entityreference.git
 projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096abdef53b
 
 ; Add a delta filter in the Views relationships - http://drupal.org/node/1468862#comment-6449450
@@ -54,17 +52,17 @@ projects[rules][version] = 2.2
 
 
 ; Features
-projects[features][type] = module
 projects[features][download][type] = git
-projects[features][download][url] = http://git.drupal.org/project/features.git
-projects[features][download][revision] = d57bee4ae7680e06b75b4dc25836f69f03c068e8
+projects[features][download][revision] = c0b054d4d4f7ca8746764ed823cf79a4aee521b6
 
 
 ; Field group
-projects[field_group][type] = module
 projects[field_group][download][type] = git
-projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][revision] = 9cdde2b96d415538257f11998f28d7e4d50a29ab
+
+
+; Field permissions
+projects[field_permissions][version] = 1.0-beta2
 
 
 ; Token
@@ -76,4 +74,4 @@ projects[strongarm][version] = 2.0
 
 
 ; Diff
-projects[diff][version] = 2.0
+projects[diff][version] = 3.2

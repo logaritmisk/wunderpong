@@ -108,12 +108,15 @@ function wp_tournament_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_tournament_players',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
-        'node' => array(
+        'users' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'target_id' => 'uid',
           ),
-          'table' => 'node',
+          'table' => 'users',
         ),
       ),
       'indexes' => array(

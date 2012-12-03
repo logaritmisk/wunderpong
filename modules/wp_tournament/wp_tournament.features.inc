@@ -18,7 +18,7 @@ function wp_tournament_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function wp_tournament_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
