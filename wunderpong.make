@@ -1,11 +1,8 @@
-; Info
-
+; Core
 api = 2
 core = 7.x
 
 
-
-; Modules
 
 ; Administration menu
 projects[admin_menu][version] = 3.0-rc3
@@ -21,7 +18,7 @@ projects[date][version] = 2.6
 
 ; Entity Reference
 projects[entityreference][download][type] = git
-projects[entityreference][download][revision] = 0ee136101c683f5c05e8ad8a98722096abdef53b
+projects[entityreference][download][revision] = b3872c69d923a6558c4ecdeed2e7ef33c46c7524
 
 ; Add a delta filter in the Views relationships - http://drupal.org/node/1468862#comment-6449450
 projects[entityreference][patch][] = http://drupal.org/files/relationship_delta-1468862-6.patch
@@ -32,7 +29,7 @@ projects[auto_entitylabel][version] = 1.1
 
 
 ; Entity API
-projects[entity][version] = 1.0-rc3
+projects[entity][version] = 1.0
 
 
 ; Panels
@@ -55,6 +52,15 @@ projects[rules][version] = 2.2
 projects[features][download][type] = git
 projects[features][download][revision] = c0b054d4d4f7ca8746764ed823cf79a4aee521b6
 
+; Menu links not set as customized, revert when menu rebuilt - http://drupal.org/node/927576#comment-5095576
+projects[features][patch][] = http://drupal.org/files/menu_links_customized-927576-8.patch
+
+; Notice: Array to string conversion in features_export_prepare() (line 190 of features.export.inc) - http://drupal.org/node/1588596
+projects[features][patch][] = http://drupal.org/files/1588596-11-features-array_diff_assoc_recursive.patch
+
+; Missing permissions - http://drupal.org/node/1892164
+projects[features][patch][] = http://drupal.org/files/use_module_name_as_key_for_permissions-1.patch
+
 
 ; Field group
 projects[field_group][download][type] = git
@@ -66,7 +72,7 @@ projects[field_permissions][version] = 1.0-beta2
 
 
 ; Token
-projects[token][version] = 1.2
+projects[token][version] = 1.4
 
 
 ; Strongarm

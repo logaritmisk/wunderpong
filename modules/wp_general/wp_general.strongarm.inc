@@ -42,7 +42,7 @@ function wp_general_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'wunderpong';
+  $strongarm->value = 'seven';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass();
